@@ -7,16 +7,14 @@ Each subfolder defines the scaffolding for a buildpack in a particular language:
 
 ## Creating a Buildpack
 
-Follow the [pack install](https://buildpacks.io/docs/tools/pack/) instructions to install the `pack` CLI for your platform.  On successful completion `pack --version` should show a version number of `0.27` or greater.
+Follow the [pack install](https://buildpacks.io/docs/tools/pack/) instructions to install the `pack` CLI for your platform.  On successful completion `pack --version` should show a version number of `0.28` or greater.
 
 Creating a buildpack identified as `examples/my_buildpack` results in a scaffolded buildpack in the `my_buildpack` folder:
 
 ```bash
-$ pack buildpack new examples/my_buildpack
-Use the arrow keys to navigate: ↓ ↑ → ←
-? Choose an implementation language for your buildpack:
-  ▸ Go
-    bash
+$ pack buildpack create
+? Enter a directory in which to scaffold the project: bash_buildpack
+? Enter an identifier for the buildpack: examples/my_buildpack
 ? Choose the buildpack API version (use the default if you are unsure):
   ▸ 0.7
     0.8
